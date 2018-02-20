@@ -20,10 +20,6 @@ var index = (Vue, {loading, error}) => {
 
       let img = new Image();
 
-      if(!value) {
-        console.warn(`Vue Img Fallback Warning: Directive value is ${ typeof value }. Now using default values.`);
-      }
-
       if(typeof value === 'string') {
         loading = value;
         err = value;
